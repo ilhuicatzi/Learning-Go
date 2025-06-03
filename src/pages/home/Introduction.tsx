@@ -1,9 +1,18 @@
-import React from "react";
+import { unstable_ViewTransition as ViewTransition } from 'react'
+import Link from "next/link";
+import { ArrowLeft } from "lucide-react";
 
 const Introduction = () => {
     return (
+        <ViewTransition>
         <div className="max-w-2xl mx-auto p-6">
+            <ViewTransition name="go-introduction-label">
             <h1 className="text-3xl font-bold mb-4">🔹 Introducción a Go</h1>
+            </ViewTransition>
+            <Link href="/" className="flex items-center text-sm font-light hover:underline mb-8 px-3">
+                <ArrowLeft className="mr-2 w-4 h-4" />
+                Regresar
+            </Link>
 
             <h2 className="text-2xl font-semibold mt-6">📜 Contexto</h2>
             <p className="mt-2">
@@ -51,6 +60,7 @@ const Introduction = () => {
                 escribir tu primer servidor básico. ¡Vamos avanzando paso a paso! 🚀
             </p>
         </div>
+        </ViewTransition>
     );
 };
 
