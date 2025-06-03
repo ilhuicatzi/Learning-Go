@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Aprendiendo Go (golang)
 
-## Getting Started
+Este es un repositorio para aprender Go (golang) desde cero.
 
-First, run the development server:
+## Requisitos
+- Tener instalado Go en tu máquina. Puedes descargarlo desde [aquí](https://go.dev/dl/).
+- Tener un editor de código. Recomendamos [Visual Studio Code](https://code.visualstudio.com/) con la extensión de Go instalada.
+- Conocimientos básicos de programación (opcional, pero recomendado).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Estructura del repositorio
+- `01_HolaMundo`: Primer programa en Go.
+- `02_Variables`: Introducción a las variables y tipos de datos.
+- `03_Condicionales`: Estructuras de control de flujo.
+- `04_Bucles`: Bucles `for`, `while` y `do-while`.
+- `05_Funciones`: Definición y uso de funciones.
+- `06_Estructuras`: Estructuras de datos como arrays, slices y maps.
+- `07_Punteros`: Introducción a los punteros en Go.
+- `08_Errores`: Manejo de errores en Go.
+- `09_Goroutines`: Introducción a la concurrencia con goroutines.
+- `10_Interfaces`: Uso de interfaces en Go.
+- `11_Paquetes`: Creación y uso de paquetes.
+- `12_Testing`: Introducción a las pruebas unitarias en Go.
+- `13_Proyecto`: Proyecto final integrando todo lo aprendido.
