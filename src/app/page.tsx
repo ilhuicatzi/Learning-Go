@@ -1,7 +1,9 @@
-
+import Introduction from "@/pages/home/Introduction"
 function HomePage() {
   return (
-    <div>HomePage</div>
+    <div>
+      <Introduction />
+    </div>
   )
 }
 
