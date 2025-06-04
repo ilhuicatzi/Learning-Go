@@ -26,39 +26,6 @@ const Introduction = () => {
                 utilizado en infraestructuras backend, API REST y microservicios por empresas como
                 Netflix, Uber y Cloudflare.
             </p>
-
-            <h2 className="text-2xl font-semibold mt-6">⚙️ Instalación de Go</h2>
-            <p className="mt-2">
-                Para comenzar con Go, sigue estos pasos:
-            </p>
-            <ol className="list-decimal list-inside mt-3 space-y-2">
-                <li>
-                    Descarga la versión más reciente desde{" "}
-                    <a
-                        href="https://go.dev/dl/"
-                        className="text-blue-500 hover:underline"
-                    >
-                        el sitio oficial de Go
-                    </a>.
-                </li>
-                <li>Instala Go siguiendo las instrucciones del asistente.</li>
-                <li>Verifica la instalación con el siguiente comando en la terminal:</li>
-            </ol>
-
-            <div className="bg-gray-100 p-4 mt-3 rounded">
-                <code className="text-gray-800">$ go version</code>
-            </div>
-
-            <p className="mt-2">
-                Si ves una versión de Go en la salida, ¡todo está listo! Ahora puedes crear tu primer
-                archivo Go y ejecutar un programa simple.
-            </p>
-
-            <h2 className="text-2xl font-semibold mt-6">🎯 Próximos pasos</h2>
-            <p className="mt-2">
-                En la siguiente sección, exploraremos la estructura de un programa en Go y cómo
-                escribir tu primer servidor básico. ¡Vamos avanzando paso a paso! 🚀
-            </p>
         </div>
         </ViewTransition>
     );
