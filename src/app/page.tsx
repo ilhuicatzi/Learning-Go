@@ -26,7 +26,9 @@ function HomePage() {
           </ViewTransition>
         </li>
         <li>
-          <Link href="#">⚙️ Instalación de Go</Link>
+          <ViewTransition name="go-installation-label">
+            <Link href="/go-install">⚙️ Instalación de Go</Link>
+          </ViewTransition>
         </li>
         <li>
           <Link href="#">🎯 Tu primer programa en Go</Link>
