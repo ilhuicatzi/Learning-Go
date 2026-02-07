@@ -100,7 +100,7 @@ function Variables() {
         </h2>
         <div className="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl p-6 shadow-sm">
           <p className="mb-4 text-slate-700 dark:text-slate-300">
-            Es posible declarar una variable con el mismo nombre en un bloque interno, lo cual "oculta" a la variable externa. Ten cuidado con esto para evitar errores lógicos.
+            Es posible declarar una variable con el mismo nombre en un bloque interno, lo cual `&quot;oculta&quot;` a la variable externa. Ten cuidado con esto para evitar errores lógicos.
           </p>
           <div className="bg-slate-900 rounded-lg overflow-hidden border border-slate-700 mb-4">
             <pre className="p-4 overflow-x-auto text-slate-100 font-mono text-sm">

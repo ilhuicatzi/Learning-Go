@@ -116,7 +116,7 @@ function DataTypes() {
             </div>
             <div className="bg-slate-50 dark:bg-slate-800 p-3 rounded-lg text-center border border-slate-200 dark:border-slate-700 col-span-2">
               <span className="block text-xs font-bold text-slate-500 uppercase">string</span>
-              <span className="font-mono text-lg text-slate-600 dark:text-slate-400">"" (cadena vacía)</span>
+              <span className="font-mono text-lg text-slate-600 dark:text-slate-400">`&quot;``&quot;` (cadena vacía)</span>
             </div>
           </div>
         </section>

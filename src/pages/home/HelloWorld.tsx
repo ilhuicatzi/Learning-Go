@@ -70,13 +70,13 @@ function HelloWorld() {
           </div>
           <div className="p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700">
             <h3 className="font-semibold flex items-center text-blue-600 dark:text-blue-400 mb-2">
-              <Terminal className="w-4 h-4 mr-2" /> import "fmt"
+              <Terminal className="w-4 h-4 mr-2" /> import `&quot;fmt&quot;`
             </h3>
             <p className="text-sm text-slate-600 dark:text-slate-400">Importa el paquete <i>format</i> para entrada y salida de texto.</p>
           </div>
           <div className="p-4 bg-white dark:bg-slate-800 rounded-lg border border-slate-200 dark:border-slate-700">
             <h3 className="font-semibold flex items-center text-blue-600 dark:text-blue-400 mb-2">
-              <FileCode className="w-4 h-4 mr-2" /> func main()
+              <FileCode className="w-4 h-4 mr-2" /> func main`&#40;&#41;`
             </h3>
             <p className="text-sm text-slate-600 dark:text-slate-400">El punto de entrada donde comienza la ejecución del programa.</p>
           </div>

@@ -73,7 +73,7 @@ function Installation() {
         <div className="space-y-4">
           <details className="group bg-orange-50 dark:bg-orange-900/20 border border-orange-100 dark:border-orange-900/50 rounded-lg p-4 open:pb-6">
             <summary className="font-semibold cursor-pointer text-orange-800 dark:text-orange-200 flex items-center">
-              Error: "go" no se reconoce como un comando...
+              Error: `&quot;go&quot;` no se reconoce como un comando...
             </summary>
             <div className="mt-3 text-sm text-slate-700 dark:text-slate-300 pl-4 border-l-2 border-orange-200 dark:border-orange-700">
               <p>Esto suele ocurrir si la variable de entorno <strong>PATH</strong> no se actualizó correctamente.</p>

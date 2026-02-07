@@ -57,7 +57,6 @@ function HomePage() {
             icon={<BookOpen className="w-8 h-8 text-blue-500" />}
             title="Introducción"
             description="Descubre la historia, filosofía y por qué Go es el lenguaje del futuro para la nube."
-            viewTransitionName="go-introduction-label"
           />
 
           <TopicCard
@@ -65,7 +64,6 @@ function HomePage() {
             icon={<Terminal className="w-8 h-8 text-slate-700 dark:text-slate-300" />}
             title="Instalación"
             description="Configura tu entorno de desarrollo en Windows, macOS o Linux paso a paso."
-            viewTransitionName="go-installation-label"
           />
 
           <TopicCard
@@ -73,7 +71,6 @@ function HomePage() {
             icon={<Code className="w-8 h-8 text-green-500" />}
             title="Hola Mundo"
             description="Escribe, compila y ejecuta tu primer programa. Entiende la estructura básica."
-            viewTransitionName="go-first-code-label"
           />
 
           <TopicCard
@@ -81,7 +78,6 @@ function HomePage() {
             icon={<Box className="w-8 h-8 text-orange-500" />}
             title="Variables"
             description="Aprende sobre var, const y el operador :=. Domina el scope y shadowing."
-            viewTransitionName="go-variables-label"
           />
 
           <TopicCard
@@ -89,7 +85,6 @@ function HomePage() {
             icon={<Database className="w-8 h-8 text-purple-500" />}
             title="Tipos de Datos"
             description="Explora tipos básicos, enteros, flotantes, strings y sus valores cero."
-            viewTransitionName="go-data-types-label"
           />
 
           {/* Coming Soon Card */}
@@ -115,7 +110,7 @@ function HomePage() {
   )
 }
 
-function TopicCard({ href, icon, title, description }: any) {
+function TopicCard({ href, icon, title, description }: { href: string, icon: React.ReactNode, title: string, description: string }) {
   return (
     <Link
       href={href}
