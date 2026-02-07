@@ -1,6 +1,5 @@
 import Link from "next/link"
 import { LogosGopher } from "@/components/icons/Golang"
-import { unstable_ViewTransition as ViewTransition } from 'react'
 import { BookOpen, Terminal, Code, Box, Database, ArrowRight } from "lucide-react"
 
 function HomePage() {
@@ -116,27 +115,25 @@ function HomePage() {
   )
 }
 
-function TopicCard({ href, icon, title, description, viewTransitionName }: any) {
+function TopicCard({ href, icon, title, description }: any) {
   return (
-    <ViewTransition name={viewTransitionName}>
-      <Link
-        href={href}
-        className="group relative block p-6 h-full bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-500 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-      >
-        <div className="w-12 h-12 bg-slate-50 dark:bg-slate-900 rounded-xl flex items-center justify-center mb-4 group-hover:bg-blue-50 dark:group-hover:bg-blue-900/20 transition-colors">
-          {icon}
-        </div>
-        <h3 className="text-xl font-bold mb-2 text-slate-800 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-          {title}
-        </h3>
-        <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
-          {description}
-        </p>
-        <div className="absolute bottom-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity transform translate-x-2 group-hover:translate-x-0">
-          <ArrowRight className="w-5 h-5 text-blue-500" />
-        </div>
-      </Link>
-    </ViewTransition>
+    <Link
+      href={href}
+      className="group relative block p-6 h-full bg-white dark:bg-slate-800 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-blue-400 dark:hover:border-blue-500 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+    >
+      <div className="w-12 h-12 bg-slate-50 dark:bg-slate-900 rounded-xl flex items-center justify-center mb-4 group-hover:bg-blue-50 dark:group-hover:bg-blue-900/20 transition-colors">
+        {icon}
+      </div>
+      <h3 className="text-xl font-bold mb-2 text-slate-800 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+        {title}
+      </h3>
+      <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+        {description}
+      </p>
+      <div className="absolute bottom-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity transform translate-x-2 group-hover:translate-x-0">
+        <ArrowRight className="w-5 h-5 text-blue-500" />
+      </div>
+    </Link>
   )
 }
 
