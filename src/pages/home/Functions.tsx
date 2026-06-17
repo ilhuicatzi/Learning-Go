@@ -134,12 +134,19 @@ function Functions() {
                 </div>
             </section>
 
-            <div className="mt-8 flex justify-end">
+            <div className="mt-8 flex justify-between items-center gap-4">
                 <Link
                     href="/"
-                    className="px-6 py-3 bg-slate-800 hover:bg-slate-900 dark:bg-white dark:hover:bg-slate-200 text-white dark:text-slate-900 rounded-lg font-bold transition-colors shadow-lg"
+                    className="inline-flex items-center text-sm font-medium text-slate-500 hover:text-blue-500 transition-colors px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800"
                 >
-                    🏠 Volver al Inicio
+                    <ArrowLeft className="mr-2 w-4 h-4" />
+                    Inicio
+                </Link>
+                <Link
+                    href="/go-pointers-structs"
+                    className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors shadow-sm"
+                >
+                    Siguiente: Punteros y Estructuras
                 </Link>
             </div>
 

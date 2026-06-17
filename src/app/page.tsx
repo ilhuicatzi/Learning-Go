@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { LogosGopher } from "@/components/icons/Golang"
-import { BookOpen, Terminal, Code, Box, Database, ArrowRight, GitBranch, Layers } from "lucide-react"
+import { BookOpen, Terminal, Code, Box, Database, ArrowRight, GitBranch, Layers, Cpu, Workflow, Zap, Package, Server } from "lucide-react"
 
 function HomePage() {
   return (
@@ -101,7 +101,40 @@ function HomePage() {
             description="Aprende a crear bloques reutilizables, retornos múltiples y closures."
           />
 
+          <TopicCard
+            href="/go-pointers-structs"
+            icon={<Cpu className="w-8 h-8 text-rose-500" />}
+            title="Punteros y Estructuras"
+            description="Domina punteros (* y &), struct, composición de tipos y receptores de métodos."
+          />
 
+          <TopicCard
+            href="/go-interfaces"
+            icon={<Workflow className="w-8 h-8 text-emerald-500" />}
+            title="Interfaces"
+            description="Entiende el desacoplamiento en Go, la implementación implícita y aserciones de tipo."
+          />
+
+          <TopicCard
+            href="/go-concurrency"
+            icon={<Zap className="w-8 h-8 text-amber-500" />}
+            title="Concurrencia"
+            description="Aprende el modelo CSP de Go con goroutines, channels, waitgroups y select."
+          />
+
+          <TopicCard
+            href="/go-modules"
+            icon={<Package className="w-8 h-8 text-violet-500" />}
+            title="Módulos y Dependencias"
+            description="Inicia módulos con go mod, descarga librerías externas y organiza tu código."
+          />
+
+          <TopicCard
+            href="/go-rest-api"
+            icon={<Server className="w-8 h-8 text-cyan-500" />}
+            title="API REST (CRUD)"
+            description="Construye un servidor HTTP completo con operaciones CRUD y JSON."
+          />
 
         </div>
       </section>
