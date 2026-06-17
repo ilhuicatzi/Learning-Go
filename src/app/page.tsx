@@ -1,6 +1,6 @@
 import Link from "next/link"
 import { LogosGopher } from "@/components/icons/Golang"
-import { BookOpen, Terminal, Code, Box, Database, ArrowRight } from "lucide-react"
+import { BookOpen, Terminal, Code, Box, Database, ArrowRight, GitBranch, Layers } from "lucide-react"
 
 function HomePage() {
   return (
@@ -87,16 +87,21 @@ function HomePage() {
             description="Explora tipos básicos, enteros, flotantes, strings y sus valores cero."
           />
 
-          {/* Coming Soon Card */}
-          <div className="group relative p-6 bg-slate-100 dark:bg-slate-800/50 rounded-2xl border-2 border-dashed border-slate-300 dark:border-slate-700 opacity-75">
-            <div className="mb-4 opacity-50">
-              <div className="w-12 h-12 bg-slate-200 dark:bg-slate-700 rounded-xl flex items-center justify-center">
-                <div className="w-8 h-8 bg-slate-300 dark:bg-slate-600 rounded-full"></div>
-              </div>
-            </div>
-            <h3 className="text-xl font-bold mb-2 text-slate-500">Próximamente...</h3>
-            <p className="text-slate-500 text-sm">Estructuras de control, funciones y más.</p>
-          </div>
+          <TopicCard
+            href="/go-control-structures"
+            icon={<GitBranch className="w-8 h-8 text-pink-500" />}
+            title="Estructuras de Control"
+            description="Domina el flujo de tu programa con if, switch, for y defer."
+          />
+
+          <TopicCard
+            href="/go-functions"
+            icon={<Layers className="w-8 h-8 text-indigo-500" />}
+            title="Funciones"
+            description="Aprende a crear bloques reutilizables, retornos múltiples y closures."
+          />
+
+
 
         </div>
       </section>
